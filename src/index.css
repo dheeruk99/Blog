@@ -13,7 +13,7 @@ code {
 }
 
 .container {
-  width: 800px;
+  width: 100%;
   margin: 0 auto;
 }
 .home h1 {
@@ -49,6 +49,13 @@ code {
   font-style: italic;
   margin-bottom: 20px;
 }
+.post-detail{
+  margin:  20px;
+}
+.post-detail span{
+  white-space: pre-wrap;
+}
+
 .post-detail h1 {
   text-align: center;
 }

@@ -1,4 +1,4 @@
-import {useState} from 'react';
+
 import {useFormInput} from '../hooks';
 import {firestore} from '../firebase';
 
@@ -24,6 +24,9 @@ function CreatePost(){
             content:content.value,
             createdAt: new Date(),
         })
+        title.setValue('');
+        subTitle.setValue('');
+        content.setValue('');
     }
 
     return(
@@ -47,7 +50,7 @@ function CreatePost(){
 
                 <div className='form-field'>
                      <label>Content</label>
-                     <textarea {...content}></textarea>
+                     <textarea style={{wrap:'hard'}} {...content}></textarea>
                 </div>
 
                 <button className='create-post-btn'>Create Post</button>

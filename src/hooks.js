@@ -7,9 +7,11 @@ export function useFormInput(initialvalue){
             function change(e){
                 setValue(e.target.value)
              }
+             
 
              return{
                 value,
-                onChange:change
+                onChange:change,
+                setValue:setValue
              }
 }
